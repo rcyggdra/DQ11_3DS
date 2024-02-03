@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DQ11"
         mc:Ignorable="d"
-        Title="DQ11 存档改造(Nintendo 3DS)" Height="650" Width="800"
+        Title="DQ11存档修改(Nintendo 3DS)" Height="650" Width="800"
         WindowStartupLocation="CenterScreen"
         AllowDrop="True" Drop="Window_Drop" PreviewDragOver="Window_PreviewDragOver"
         Loaded="Window_Loaded">
@@ -16,7 +16,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Menu Grid.Row="0">
-            <MenuItem Header="ファイル(_F)">
+            <MenuItem Header="文件(_F)">
                 <MenuItem x:Name="MenuItemFileOpen" Header="打开(_O)" Click="MenuItemFileOpen_Click"/>
                 <MenuItem x:Name="MenuItemFileOpenForce" Header="强制打开(_R)" Click="MenuItemFileOpenForce_Click"/>
                 <MenuItem x:Name="MenuItemFileSave" Header="保存(_S)" Click="MenuItemFileSave_Click"/>

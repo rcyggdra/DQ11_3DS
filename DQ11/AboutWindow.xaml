@@ -11,6 +11,7 @@
             <Label Content="Creater ： 亀虫"/>
             <Label x:Name="LabelHP" Content="HP ： http://turtleinsect.php.xdomain.jp/" MouseDown="LabelHP_MouseDown"/>
             <Label Content="Mail ： turtle.insect@gmail.com"/>
+            <Label Content="中文翻译 ： yggdra"/>
         </StackPanel>
     </Grid>
 </Window>
