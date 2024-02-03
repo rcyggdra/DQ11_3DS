@@ -286,8 +286,8 @@
                             <Label Content="装备"/>
                             <Label Content="右手" Grid.Row="1"/>
                             <Label Content="左手" Grid.Row="1" Grid.Column="2"/>
-                            <Label Content="头" Grid.Row="2"/>
-                            <Label Content="体" Grid.Row="2" Grid.Column="2"/>
+                            <Label Content="头部" Grid.Row="2"/>
+                            <Label Content="身体" Grid.Row="2" Grid.Column="2"/>
                             <Label Content="饰品1" Grid.Row="3"/>
                             <Label Content="饰品2" Grid.Row="3" Grid.Column="2"/>
                             <ComboBox Grid.Row="1" Grid.Column="1" ItemsSource="{Binding ElementName=ListBoxCharItem, Path=Items}" DisplayMemberPath="Name" SelectedIndex="{Binding ElementName=ListBoxChar, Path=SelectedItem.EquipRightHand}"/>
@@ -520,7 +520,7 @@
                     </ScrollViewer>
                 </DockPanel>
             </TabItem>
-            <TabItem Header="故事">
+            <TabItem Header="故事进程">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="13*"/>
