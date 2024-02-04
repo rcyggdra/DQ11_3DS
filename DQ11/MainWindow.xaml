@@ -1031,7 +1031,7 @@
                             <RowDefinition/>
                         </Grid.RowDefinitions>
                         <DockPanel>
-                            <Label DockPanel.Dock="Top" Content="冒险之书暗号"/>
+                            <Label DockPanel.Dock="Top" Content="冒险之书的暗号"/>
                             <ListBox x:Name="ListBoxWatchWorld"/>
                         </DockPanel>
                         <Grid Grid.Row="1">
