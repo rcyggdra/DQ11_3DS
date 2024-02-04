@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DQ11"
         mc:Ignorable="d"
-        Title="Info" Height="140" Width="264" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="信息" Height="140" Width="264" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <StackPanel>
             <Label Content="Creater ： カメムシ"/>
