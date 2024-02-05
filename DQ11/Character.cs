@@ -22,7 +22,7 @@ namespace DQ11
 				Item.Add(new CharItem(mBaseAddress + 0x24 + i * 2));
 			}
 
-			Status.Add(new CharStatus(mBaseAddress + 0x12, 7) { Name = "领域" });
+			Status.Add(new CharStatus(mBaseAddress + 0x12, 7) { Name = "战域" });
 			Status.Add(new CharStatus(mBaseAddress + 0x12, 1) { Name = "中毒" });
 			Status.Add(new CharStatus(mBaseAddress + 0x12, 2) { Name = "诅咒" });
 			Status.Add(new CharStatus(mBaseAddress + 0x12, 3) { Name = "诅咒" });
