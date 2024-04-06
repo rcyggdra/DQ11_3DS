@@ -6,7 +6,7 @@ namespace DQ11
 	class Item
 	{
 		private static Item mThis;
-		public ItemInfo None { get; private set; } = new ItemInfo(0xFFFF, "なし", 1);
+		public ItemInfo None { get; private set; } = new ItemInfo(0xFFFF, "无", 1);
 		public List<ItemInfo> Tools { get; private set; } = new List<ItemInfo>();
 		public List<ItemInfo> Equipments { get; private set; } = new List<ItemInfo>();
 		public List<ItemInfo> Hats { get; private set; } = new List<ItemInfo>();

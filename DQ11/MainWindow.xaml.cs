@@ -89,12 +89,12 @@ namespace DQ11
 			SaveData saveData = SaveData.Instance();
 			if (saveData.Open(files[0], false) == false)
 			{
-				MessageBox.Show("読込失敗");
+				MessageBox.Show("读取失败");
 				return;
 			}
 
 			Init();
-			MessageBox.Show("読込成功");
+			MessageBox.Show("读取成功");
 		}
 
 		private void Window_PreviewDragOver(object sender, DragEventArgs e)
@@ -134,8 +134,8 @@ namespace DQ11
 			SaveFileDialog dlg = new SaveFileDialog();
 			if (dlg.ShowDialog() == false) return;
 
-			if (SaveData.Instance().SaveAs(dlg.FileName) == true) MessageBox.Show("書込成功");
-			else MessageBox.Show("書込失敗");
+			if (SaveData.Instance().SaveAs(dlg.FileName) == true) MessageBox.Show("写入成功");
+			else MessageBox.Show("写入失败");
 		}
 
 		private void MenuItemExit_Click(object sender, RoutedEventArgs e)
@@ -338,7 +338,7 @@ namespace DQ11
 				String[] code = lines[i].Split(' ');
 				if(code.Length != 2)
 				{
-					MessageBox.Show((i + 1).ToString() + "行目に誤りがあります");
+					MessageBox.Show((i + 1).ToString() + "该行存在错误");
 					return;
 				}
 
@@ -361,7 +361,7 @@ namespace DQ11
 					case '4':
 						if(i + 1 >= lines.Length)
 						{
-							MessageBox.Show((i + 1).ToString() + "行目に誤りがあります");
+							MessageBox.Show((i + 1).ToString() + "该行存在错误");
 							return;
 						}
 						switch(code[1][0])
@@ -388,7 +388,7 @@ namespace DQ11
 						break;
 
 					default:
-						MessageBox.Show((i + 1).ToString() + "行目に解読不可の命令があります");
+						MessageBox.Show((i + 1).ToString() + "该行包含无法解读的指令");
 						return;
 				}
 
@@ -419,8 +419,8 @@ namespace DQ11
 		private void Save()
 		{
 			mAllStatusList.ForEach(x => x.Save());
-			if (SaveData.Instance().Save() == true) MessageBox.Show("書込成功");
-			else MessageBox.Show("書込失敗");
+			if (SaveData.Instance().Save() == true) MessageBox.Show("写入成功");
+			else MessageBox.Show("写入失败");
 		}
 
 		private void Init()
